@@ -12,9 +12,9 @@ window.addEventListener("load", function(){
             form.append("submit", "hola");
             form.append("fichero", fichero.files[0])
             fetch("ficheros.php", {
-                method:"post",
+                method:"POST",
                 body:form
-            }).then(x=>x.text()).then(texto=>{alert(texto)});
+            }).then(x=>x.text()).then(texto=>{alert("Archivo subido correctamente")});
         } else{
             alert("Debe introducir un fichero.");
         }  

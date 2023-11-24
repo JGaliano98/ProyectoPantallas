@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+body{
+    background-color: rgb(216, 216, 216);
+}
+#contenido{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#nuevaNoticia{
+    background-color: rgb(175, 175, 175);
+
+    padding: 3%;
+    margin-left: 35%;
+    margin-top: 7%;
+    border: 2px black solid;
+    border-radius: 3%;
+    width: 30%;
+}
+
+#divNoticias{
+    width: 90%;
+ 
+    margin-left: 5%;
+}
+
+#inputActualizarID{
+    width: 64px;
+}
+
+#inputActualizarFechas{
+    width: 130px;
+}
+
+#inputActualizarPrioridad{
+    width: 70px;
+}
+
+#inputActualizarDuracion{
+    width: 70px;
+}
+
+#inputActualizarTipo{
+    width: 66px;
+}
+#inputActualizarFormato{
+    width: 66px;
+}
+
+#btnNuevaNoticia{
+
+    width: 145px;
+    height: 40px;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    margin-left: 84.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+#btnBorrar, #btnEditar, #btnGuardar, #btnVolver{
+    width: 70px;
+    height: 22px;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+   
+}
+#titulo{
+    text-align: center;
+    margin-bottom: 5%;
+}

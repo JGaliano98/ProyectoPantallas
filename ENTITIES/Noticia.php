@@ -3,7 +3,9 @@
 require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPantallas/HELPERS/Autoload.php';
 Autoload::Autoload();
 
-class Noticia {
+class Noticia implements \JsonSerializable {
+
+    
     private $ID_Noticia;
     private $ID_Perfil;
     private $fecha_ini;
@@ -125,6 +127,16 @@ class Noticia {
     public function toString() {
         return "Noticia [ID_Noticia=" . $this->ID_Noticia . ", ID_Perfil=" . $this->ID_Perfil . ", fecha_ini=" . $this->fecha_ini . ", fecha_fin=" . $this->fecha_fin . ", titulo=" . $this->titulo . ", prioridad=" . $this->prioridad . ", duracion=" . $this->duracion . ", tipo=" . $this->tipo . ", contenido=" . $this->contenido . ", url=" . $this->url . ", formato=" . $this->formato . "]";
     }
+
+    public function toJSON(){
+        return json_encode(get_object_vars($this));
+    }
+
+    public function jsonSerialize(){
+        $var=get_object_vars($this);
+        return $var;
+    }
+
 }
 
 ?>

@@ -1,11 +1,26 @@
-
-
-{
-    "tipo": "imagen",
-    "url": "../ProyectoPantallas/RECURSOS/IMAGENES/Captura.png",
-    "formato": "",
+[
+    {
+    "tipo": "video",
+    "url": "../ProyectoPantallas/RECURSOS/VIDEOS/Video.mp4",
+    "formato": "mp4",
     "contenido": "",
-    "duracion": "30"
-}
+    "duracion": "5"
+    },
 
-    
+    {
+        "tipo": "imagen",
+        "url": "../ProyectoPantallas/RECURSOS/IMAGENES/Captura.PNG",
+        "formato": "",
+        "contenido": "",
+        "duracion": "2"
+    },
+    {
+        "tipo": "web",
+        "url": "",
+        "formato": "",
+        "contenido": "Hola",
+        "duracion": "10"
+    }
+
+
+]
